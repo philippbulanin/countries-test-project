@@ -1,0 +1,22 @@
+.home {
+    &__container {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__sidenav-container {
+      height: 100%;
+      width: 100%;
+    }
+}
+
+.sidenav {
+  min-width: 150px;
+  max-width: 300px;
+  width: 15%;
+
+  &__link {
+    display: flex !important;
+    justify-content: center;
+  }
+}

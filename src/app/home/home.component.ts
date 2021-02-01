@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Country } from '../shared-interfaces';
+import { HomeService } from './home.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  public countries: Country[];
 
-  constructor() { }
+  constructor(
+    private _service: HomeService
+  ) { }
 
   ngOnInit(): void {
+    this.countries = this._service.countries;
   }
 
 }
