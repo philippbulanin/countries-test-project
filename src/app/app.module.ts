@@ -10,6 +10,13 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { UkraineModule } from './ukraine/ukraine.module';
+import { CanadaModule } from './canada/canada.module';
+import { NorwayModule } from './norway/norway.module';
+import { ItalyModule } from './italy/italy.module';
+import { SpainModule } from './spain/spain.module';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -24,7 +31,12 @@ import { MatListModule } from '@angular/material/list';
     MatCardModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    UkraineModule,
+    CanadaModule,
+    NorwayModule,
+    ItalyModule,
+    SpainModule
   ],
   providers: [],
   bootstrap: [AppComponent]

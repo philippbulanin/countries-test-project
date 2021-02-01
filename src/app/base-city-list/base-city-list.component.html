@@ -1,0 +1,28 @@
+<div class="base-list__container">
+  <div class="base-list__add">
+    <mat-form-field >
+      <mat-label>Add new city</mat-label>
+      <input [formControl]="addCityControl" matInput type="text">
+      <mat-error *ngIf="addCityControl.invalid">This field is required</mat-error>
+    </mat-form-field>
+    <button (click)="addCity()" mat-icon-button>
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+  <mat-list>
+    <mat-list-item *ngFor="let formGroup of citiesFormArray.controls; let index = index">
+      <div class="base-list__element" [formGroup]="formGroup">
+        <div class="element__name">
+          <mat-form-field>
+            <input matInput formControlName="name" type="text">
+          </mat-form-field>
+        </div>
+        <div class="element__actions">
+          <button (click)="delete(index)" mat-icon-button>
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </div>
+    </mat-list-item>
+  </mat-list>
+</div>

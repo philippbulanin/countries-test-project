@@ -1,7 +1,9 @@
 export class City {
   public id: string;
 
-  constructor(public name: string) {
+  constructor(
+    public name: string
+  ) {
     this.name = name;
     this.id = this.guid();
   }
@@ -12,6 +14,7 @@ export class City {
             .toString(16)
             .substring(1);
     }
+
     return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
   }
 }
