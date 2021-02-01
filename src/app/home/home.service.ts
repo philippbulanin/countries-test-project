@@ -9,25 +9,28 @@ export class HomeService {
     {
       id: 0,
       countryName: "Ukraine",
-      routerLink: "/ukraine"
+      routerLink: "ukraine"
     },
     {
       id: 1,
       countryName: "Norway",
-      routerLink: "/norway"
-    },{
+      routerLink: "norway"
+    },
+    {
       id: 2,
       countryName: "Canada",
-      routerLink: "/canada"
-    },{
+      routerLink: "canada"
+    },
+    {
       id: 3,
       countryName: "Spain",
-      routerLink: "/spain"
-    },{
+      routerLink: "spain"
+    },
+    {
       id: 4,
       countryName: "Italy",
-      routerLink: "/italy"
-    },
+      routerLink: "italy"
+    }
   ];
 
   constructor() { }
